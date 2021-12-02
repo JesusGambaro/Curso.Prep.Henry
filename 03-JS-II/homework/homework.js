@@ -7,9 +7,8 @@ function obtenerMayor(x, y) {
     // Devuelve el número más grande
     // Si son iguales, devuelve cualquiera de los dos
     // Tu código:
-    if (x === y) return x;
-    else if (x > y) return x;
-    else return y;
+    if (x > y) return x;
+    return y;
 }
 
 function mayoriaDeEdad(edad) {
@@ -26,9 +25,9 @@ function conection(status) {
     //Cuando el estado es igual a 2, el usuario está "Away"
     //De lo contrario, presumimos que el usuario está "Offline"
     //Devolver el estado de conexión de usuario en cada uno de los casos.
-    if (status === 1) console.log("Online");
-    else if (status === 2) console.log("Away");
-    else console.log("Offline");
+    if (status === 1) return "Online";
+    else if (status === 2) return "Away";
+    return "Offline";
 }
 
 function saludo(idioma) {
@@ -38,10 +37,10 @@ function saludo(idioma) {
     // Si "idioma" es "ingles", devuelve "Hello!"
     // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
     // Tu código:
-    if (idioma === "aleman") console.log("Guten Tag!");
-    else if (idioma === "mandarin") console.log("Ni Hao!");
-    else if (idioma === "ingles") console.log("Hello!");
-    else console.log("Hola!");
+    if (idioma === "aleman") return "Guten Tag!";
+    else if (idioma === "mandarin") return "Ni Hao!";
+    else if (idioma === "ingles") return "Hello!";
+    return "Hola!";
 }
 
 function colors(color) {
@@ -54,20 +53,15 @@ function colors(color) {
     //Usar el statement Switch.
     switch (color) {
         case "blue":
-            console.log("This is blue");
-            break;
+            return "This is blue";
         case "red":
-            console.log("This is red");
-            break;
+            return "This is red";
         case "green":
-            console.log("This is green");
-            break;
+            return "This is green";
         case "orange":
-            console.log("This is orange");
-            break;
+            return "This is orange";
         default:
-            console.log("Color not found");
-            break;
+            return "Color not found";
 
     }
 
@@ -156,7 +150,7 @@ function tablaDelSeis() {
 function tieneTresDigitos(numero) {
     //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
     //Escribe tu código aquí
-    return numero > 99 && numero < 999;
+    return numero > 99 && numero < 1000;
 }
 
 function doWhile(numero) {
