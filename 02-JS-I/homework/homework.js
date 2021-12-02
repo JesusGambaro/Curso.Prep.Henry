@@ -10,10 +10,10 @@ const nuevoNum = 20;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 10;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 0;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -164,14 +164,15 @@ function combinarNombres(nombre, apellido) {
     // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
     // Ejemplo: "Soy", "Henry" -> "Soy Henry"
     // Tu código
-    return nombre + " " + apellido;
+    var combiancion= nombre + " " + apellido;
+    return combiancion;
 }
 
 function obtenerSaludo(nombre) {
     // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
     // "Martin" -> "Hola Martin!"
     // Tu código:
-    let prhase = "Hola " + nombre + "!";
+    return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
